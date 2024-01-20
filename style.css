@@ -34,8 +34,8 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+    justify-content: space-around;
+    padding: 20px 10px;
 }
 
 #infonav{
@@ -107,6 +107,17 @@ main{
     margin: 6%;
     text-align: center;
     margin: 52px;
+}
+
+.info2 {
+    margin: 6%;
+    text-align: center;
+    margin: 52px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 61px;
 }
 
 #title{
@@ -267,7 +278,7 @@ p{
 }
 
 .final1{
-    display: none;
+    padding: 0 203px;
 }
 
 /* Container .container */
@@ -288,8 +299,44 @@ p{
             justify-content: space-between;
             border-bottom: 1px solid #c4c4c4d4;
         }
+        
+    }
+    @media screen and (max-width: 440px) {
+        .listafina{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding-left: 10px;
+        }
+        footer{
+            align-items: flex-start;
+        } 
+
+        p{
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: flex-start;
+            width: 100%;
+        }
+
+        #peque{
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: flex-start;
+            width: 100%;
+        }
+
+        .listas{
+            width: 100%;
+            padding: 0;
+        }
+
+        #idc{
+            margin: 0;
+        }
     }
 
+   
       /* Extra small */
       @media screen and (min-width: 576px) {
         .container {
@@ -301,9 +348,6 @@ p{
             justify-content: space-between;
        
         }
-        /* .info1 {
-            margin: 10px;
-        } */
         #menu {
             display: none;
         }
@@ -317,12 +361,16 @@ p{
             display: flex;
             align-items: center;
         }
-        .final1{
-            padding: 10px;
-        }
+       
         .listas {
             padding: 35px 2px 35px 18px;
             flex-direction: row;
+        }
+       
+      }
+      @media screen and (max-width: 822px) {
+         .final1{
+            padding: 10px;
         }
       }
 
@@ -333,9 +381,12 @@ p{
             margin: 0;
             margin-bottom: 50px;
         }
+        .info2{
+            padding: 0px 0px 30px 0px;
+        } 
         #img1{
             width: 100%;
-
+            height: 100%;
         }
         .final1{
             flex-direction: column;
@@ -344,12 +395,23 @@ p{
             order: 2;
         }
 
+        .info1{
+            padding-bottom: 30px;
+        }
+
       }
 
       /* Small */
-      @media screen and (min-width: 768px) {
+      @media screen and (max-width: 950px) {
         .container {
           max-width: 100%;
+          align-items: center;
+        }
+        .info1{
+            margin: 0;
+        }
+        .info2{
+            margin: 0;
         }
 
       }
